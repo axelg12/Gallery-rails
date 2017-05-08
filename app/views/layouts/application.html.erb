@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gallery</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav>
+      <ul class="App__nav">
+        <li class="App__nav__list">Home</li>
+        <li class="App__nav__list">Photos</li>
+      </ul>
+    </nav>
+    <%= yield %>
+  </body>
+</html>
